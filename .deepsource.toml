@@ -1,16 +1,12 @@
 version = 1
 
 [[analyzers]]
-name = "go"
+name = "java"
 enabled = true
 
   [analyzers.meta]
-  import_root = "github.com/fx2y/temporal"
+  runtime_version = "11"
 
 [[transformers]]
-name = "gofumpt"
-enabled = true
-
-[[transformers]]
-name = "gofmt"
+name = "google-java-format"
 enabled = true
