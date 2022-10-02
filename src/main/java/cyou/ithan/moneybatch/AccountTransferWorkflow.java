@@ -7,15 +7,15 @@ import io.temporal.workflow.WorkflowMethod;
 
 @WorkflowInterface
 public interface AccountTransferWorkflow {
-    @WorkflowMethod
-    void deposit(String toAccount, int batchSize);
+  @WorkflowMethod
+  void deposit(String toAccount, int batchSize);
 
-    @SignalMethod
-    void withdraw(String fromAccountId, String referenceId, int amountCents);
+  @SignalMethod
+  void withdraw(String fromAccountId, String referenceId, int amountCents);
 
-    @QueryMethod
-    int getBalance();
+  @QueryMethod
+  int getBalance();
 
-    @QueryMethod
-    int getCount();
+  @QueryMethod
+  int getCount();
 }
